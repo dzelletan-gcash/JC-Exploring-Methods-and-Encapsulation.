@@ -5,13 +5,11 @@ public class Computer {
     private int ramInGB;
 
     public Computer() {
-        this.brand = "Generic";
-        this.ramInGB = 8;
+        this("Generic", 8);
     }
 
     public Computer(String brand) {
-        this();
-        this.brand = brand;
+        this(brand, 8);
     }
 
     public Computer(String brand, int ramInGB) {

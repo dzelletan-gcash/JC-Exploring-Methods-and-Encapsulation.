@@ -5,10 +5,12 @@ public class SmartDoor {
 
     public void lockDoor() {
         isLocked = true;
+        System.out.println("Locking the door...");
     }
 
     public void unlockDoor() {
         isLocked = false;
+        System.out.println("Unlocking the door...");
     }
 
     public boolean isLocked() {
@@ -16,11 +18,11 @@ public class SmartDoor {
     }
 
     public static void main(String[] args) {
-        SmartDoor sd = new SmartDoor();
-        System.out.println("Is the door locked? " + sd.isLocked);
-        sd.lockDoor();
-        System.out.println("Is the door locked? " + sd.isLocked);
-        sd.unlockDoor();
-        System.out.println("Is the door locked? " + sd.isLocked);
+        SmartDoor door = new SmartDoor();
+        System.out.println("Is the door locked? " + door.isLocked);
+        door.lockDoor();
+        System.out.println("Is the door locked? " + door.isLocked);
+        door.unlockDoor();
+        System.out.println("Is the door locked? " + door.isLocked);
     }
 }

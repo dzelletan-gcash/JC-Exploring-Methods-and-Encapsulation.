@@ -1,5 +1,9 @@
 package org.example;
 
 public class Student {
-    String name = "Alex";
+    String name;
+
+    Student(String name) {
+        this.name = name;
+    }
 }

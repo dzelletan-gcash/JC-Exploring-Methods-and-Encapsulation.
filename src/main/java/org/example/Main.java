@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Student student = new Student();
+        Student student = new Student("Alex");
         System.out.println("Name before change: " + student.name);
         changeStudentName(student, "Jordan");
         System.out.println("Name after change: " + student.name);
